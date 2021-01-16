@@ -8,3 +8,7 @@ function showCreatePost(){
     modal.style.display = "none";
   }
   
+  function navigateToPostList(){
+    location.href = "html/postslist.html"
+  }
+  
