@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<head>
+    <title>ScriBBler</title>
+    <link href='../styles/post.css' rel='stylesheet' type='text/css'>
+    <link href='../styles/common.css' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Proza+Libre&family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&family=Ubuntu+Mono:ital@1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://use.fontawesome.com/e4c81bb835.js"></script>
+    <link href="../styles/font-awesome.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
+    <style>
+    </style>
+</head>
+
+<body onload="hideSaveButtom()">
+    <div class="header">
+        <div class="title-container">
+            <p class="title">ScriBBler</p>
+            <p class="sub-title">Explore, Imagine, Create</p>
+        </div>
+        <div class="login-buttons-container">
+            <button onclick="showSignInModal()" class="blue-button" type="button">Sign In</button>
+            <button onclick="showSignUpModal()" class="blue-button" type="button">Sign Up</button>
+        </div>
+    </div>
+
+    <!-- Insert code for Sign In modal here -->
+    <div class="modal" id="signin-modal">
+        <div class="modal-content">
+
+            <div class="modal-head">
+                <span onclick="hideSignInModal()" id="close" class="close">&times;</span>
+                <h2 class="modal-title">Welcome Back!</h2>
+            </div>
+
+            <hr>
+
+            <form>
+                <label for="username" class="label-text">Username</label>
+                <input type="text" id="username" placeholder="Enter Username" required>
+                <label for="password" class="label-text">Password</label>
+                <input type="password" id="password" placeholder="Enter Password" required>
+                <button type="submit" class="signin-btn">Sign In</button>
+            </form>
+
+            <p class=bottom-banner>Not a member?
+                <span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span>
+            </p>
+        </div>
+    </div>
+
+    <!-- Insert code for Sign Up modal here -->
+    <div class="modal" id="signup-modal">
+        <div class="modal-content">
+
+            <div class="modal-head">
+                <span onclick="hideSignUpModal()" id="close" class="close">&times;</span>
+                <h2 class="modal-title">Get Started</h2>
+            </div>
+
+            <hr>
+
+            <form>
+                <label for="fullname" class="label-text">Full name</label>
+                <input type="text" placeholder="Enter Full Name" required>
+                <label for="username" class="label-text">Username</label>
+                <input type="text" placeholder="Enter Username" required>
+                <label for="password" class="label-text">Password</label>
+                <input type="password" placeholder="Enter Password" required>
+                <label for="confirmpassword" class="label-text">Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" required>
+                <button type="submit" class="signin-btn">Sign up</button>
+            </form>
+
+        </div>
+    </div>
+
+    <section id="section1" class="section">
+        <div class="blogContent">
+            <div id="blogTitle" class="blogTite">
+            <h id="blogTitleNew">JavaScript</h>
+        </div>
+    
+    <div class="blogAuthor">
+        <button class="buttonstyle" id ="edit" onclick="editContent();">Edit
+          <i class="fas fa-edit"></i>
+        </button>
+        <button class="buttonstyle" id ="save" onclick="saveContent()">Save
+          <i class="fas fa-save"></i>
+        </button>
+
+        <p>Srishti Gupta</p>
+    </div>
+    
+    <div class="blogText">
+        <p id="blogBody" contenteditable="false">
+          JavaScript often abbreviated as JS, is a programming language that conforms to the ECMAScript specification.[7] JavaScript is high-level, often just-in-time compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based object-orientation, and first-class functions.
+
+          Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide Web.[8] JavaScript enables interactive web pages and is an essential part of web applications. The vast majority of websites use it for client-side page behavior,[9] and all major web browsers have a dedicated JavaScript engine to execute it.
+        
+          As a multi-paradigm language, JavaScript supports event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM). However, ECMAScript itself does not include any input/output (I/O), such as networking, storage, or graphics facilities, as the host environment (usually a web browser) provides those APIs.     
+        </p>
+    </div>
+        </div>
+        <br/>
+        <input type="button" class="buttonLike" id="like" name="like" value="Like" onclick="likeAction();">
+        <p id="likeStatus">Be the first one to like this!</p>
+        <br>
+        <div>
+        <textarea id="commenttext" name="comment" placeholder="Leave a comment..."></textarea>
+        </div>
+        <input type="button" class="buttonComment" id="comment" name="comment" value="Comment" onclick="commentAction();">
+        <br>
+        <h3>All Comments</h3>
+        <section>
+        <div id="commentbox" class="commentbox">
+        </div>
+        </section>
+    </section>
+    
+    <script src="../scripts/post.js" defer></script>
+    <script src="../scripts/common.js">             
+    </script>
+
+</body>

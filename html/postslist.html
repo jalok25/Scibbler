@@ -2,6 +2,7 @@
 <html>
 
 <head>
+    <title>ScriBBler</title>
     <link href='../styles/common.css' rel='stylesheet' type='text/css'>    
     <link href='../styles/postslist.css' rel='stylesheet' type='text/css'>
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -38,9 +39,9 @@
           <hr>
           <form>
             <label for="username" class="label-text">Username</label>
-            <input type="text" id="username" placeholder="Enter Username" required>
+            <input type="text" placeholder="Enter Username" required>
             <label for="password" class="label-text">Password</label>
-            <input type="password" id="password" placeholder="Enter Password" required>
+            <input type="password" placeholder="Enter Password" required>
             <button type="submit" class="signin-btn">Sign In</button>
           </form>
           <p class=bottom-banner>Not a member?<span onclick="hideSignInModal();showSignUpModal()" class=signup>Sign Up</span></p>
@@ -58,13 +59,13 @@
           <hr>
           <form>
             <label for="name" class="label-text">Name</label>
-            <input type="text" id="name" placeholder="Enter Your Name" required>
+            <input type="text" placeholder="Enter Your Name" required>
             <label for="username" class="label-text">Username</label>
-            <input type="text" id="username" placeholder="Enter Your Username" required>
+            <input type="text" placeholder="Enter Your Username" required>
             <label for="password" class="label-text">Password</label>
-            <input type="password" id="password" placeholder="Enter Your Password" required>
+            <input type="password" placeholder="Enter Your Password" required>
             <label for="confirmpassword" class="label-text">Confirm Password</label>
-            <input type="password" id="confirm_password" placeholder="Re-enter Your Password" required>
+            <input type="password" placeholder="Re-enter Your Password" required>
             <button type="submit" class="signin-btn">Sign up</button>
           </form>
           </div>
@@ -281,6 +282,7 @@
     </div>
     <!-- list of all posts ends here -->
     <script src="../scripts/postslist.js"></script>
+    <script src="../scripts/common.js"></script>
 </body>
 
 </html>

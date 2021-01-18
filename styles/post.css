@@ -1,0 +1,80 @@
+body{
+    color: black;
+}
+.blogTite {
+    font-size: 150%;
+    font-family: 'Abel', sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+.blogText {
+  font-family: 'Proza Libre', sans-serif;
+  text-align: justify;
+}
+.blogAuthor {
+    font-family: 'Proza Libre', sans-serif;
+    font-size: 30px;
+}
+
+.buttonstyle{
+    background-color: #e42c64;
+    height: 40px;
+    width: 70px;
+    color: white;
+    border: 0px;
+    border-radius: 4px;;
+    float: right;
+    text-align: center;
+    cursor: pointer;
+}
+#section1{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.buttonLike{
+    background-color: #e42c64;
+    height: 40px;
+    width: 100px;
+    color: white;
+    border: 0px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+.buttonComment{
+    background-color: #e42c64;
+    height: 40px;
+    width: 100px;
+    color: white;
+    border: 0px;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+}
+textarea{
+    width: 100%;
+    height: 100px;
+}
+.commentbox{
+    display: flex;
+    flex-direction: column;
+    background-color: silver;
+}
+.commentbox > div {
+    background-color: white;
+    width: auto;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    line-height: 54px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+
+.usercomment {
+    height: 50px;
+    font-family: 'Proza Libre', sans-serif;
+}
